@@ -45,4 +45,3 @@ decade_summary %>%
   geom_line() +
   theme_classic()
 
-3
