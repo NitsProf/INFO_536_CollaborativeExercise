@@ -46,3 +46,15 @@ LineGraph<-decade_summary %>%
   theme_classic()
 
 LineGraph
+
+
+##Role 4: Improve the plot:
+library(tidyverse)
+?geom_line
+?geom_point
+decade_summary %>%
+  ggplot(mapping = aes(x = Decade,
+    y = Total_nkill)) +
+  geom_line(aes(y=Total_nkill),color = 'green', size=4) +
+  geom_point(aes(y=Total_nkill),color='red', size=4.5)
+  theme_classic()
