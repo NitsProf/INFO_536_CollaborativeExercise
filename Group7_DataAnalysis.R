@@ -38,10 +38,11 @@ decade_summary <- df %>%
 
 library(ggplot2)
 
-decade_summary %>%
+LineGraph<-decade_summary %>%
   ggplot(mapping = aes(
     x = Decade,
     y = Total_nkill)) +
   geom_line() +
   theme_classic()
 
+LineGraph
