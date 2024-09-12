@@ -45,4 +45,4 @@ plot <- decade_summary %>%
   geom_line() +
   theme_classic()
 
-plot
+plot 
