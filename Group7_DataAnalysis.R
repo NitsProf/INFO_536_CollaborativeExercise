@@ -38,11 +38,11 @@ decade_summary <- df %>%
 
 library(ggplot2)
 
-plot <- decade_summary %>%
+decade_summary %>%
   ggplot(mapping = aes(
     x = Decade,
     y = Total_nkill)) +
   geom_line() +
   theme_classic()
 
-plot 
+3
